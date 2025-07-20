@@ -1,0 +1,134 @@
+body {
+  font-family: 'Bebas Neue', cursive;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding: 10px 20px;
+  font-family: inherit;
+}
+
+.menu-icon {
+  font-size: 28px;
+  font-family: inherit;
+}
+
+.nav-center {
+  display: flex;
+  gap: 60px;
+  font-style: italic;
+  font-size: 36px; /* увеличено */
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-family: inherit;
+}
+
+.shop-name {
+  font-size: 48px; /* ещё крупнее название */
+}
+
+.nav-center a,
+.nav-center .shop-name {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+main {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.product-grid {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  font-family: inherit;
+}
+
+.product {
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  width: 220px; /* увеличено с 180 до 220 */
+  text-decoration: none;
+  color: black;
+  font-family: inherit;
+}
+
+.product img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-style: italic;
+  margin-top: 10px;
+  font-family: inherit;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  border-right: 2px solid black;
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.nav-text {
+  display: inline-block; /* чтобы transform работал */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-text:hover {
+  transform: translateY(-8px);
+}
+
