@@ -1,8 +1,14 @@
+/* --- ОБЩЕЕ --- */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Bebas Neue', cursive;
   margin: 0;
   padding: 0;
   background: white;
+  overflow-x: hidden;
 }
 
 /* --- HEADER --- */
@@ -49,6 +55,7 @@ main {
   display: flex;
   justify-content: center;
   font-family: inherit;
+  flex-wrap: wrap;
 }
 
 /* --- PRODUCT GRID --- */
@@ -148,7 +155,7 @@ main {
   transform: translateY(-8px);
 }
 
-/* --- 📱 MOBILE ADAPTATION --- */
+/* --- 📱 МОБИЛЬНАЯ АДАПТАЦИЯ --- */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
@@ -179,6 +186,7 @@ main {
 
   .product {
     max-width: 90%;
+    padding: 10px;
   }
 
   .product p {
@@ -191,5 +199,9 @@ main {
 
   .sidebar a {
     font-size: 20px;
+  }
+
+  main {
+    padding: 20px;
   }
 }
